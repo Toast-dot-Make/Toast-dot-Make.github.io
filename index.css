@@ -1,206 +1,99 @@
-@font-face {
-  font-family: "Input Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: local("InputSans-Bold"), url("../fonts/InputSans-Bold.eot?#") format("embedded-opentype"), url("../fonts/InputSans-Bold.woff") format("woff"), url("../fonts/InputSans-Bold.ttf") format("opentype"), url("../fonts/InputSans-Bold.svg#web") format("svg"); }
-
-@font-face {
-  font-family: "Input Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: local("InputSans-Regular"), url("../fonts/InputSans-Regular.eot?#") format("embedded-opentype"), url("../fonts/InputSans-Regular.woff") format("woff"), url("../fonts/InputSans-Regular.ttf") format("opentype"), url("../fonts/InputSans-Regular.svg#web") format("svg"); }
-
-@font-face {
-  font-family: "Input Sans";
-  font-style: normal;
-  font-weight: 500;
-  src: local("InputSans-Medium"), url("../fonts/InputSans-Medium.eot?#") format("embedded-opentype"), url("../fonts/InputSans-Medium.woff") format("woff"), url("../fonts/InputSans-Medium.ttf") format("opentype"), url("../fonts/InputSans-Medium.svg#web") format("svg"); }
-
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-* {
+html{
+  background: #1D1E2A
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td{
   margin: 0;
   padding: 0;
-  line-height: 1;
-  -webkit-tap-highlight-color: transparent; }
-
-html {
-  font-family: "Input Sans", "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
-
-/**
- * Remove default margin.
- */
-body {
-  margin: 0;
-  font-size: 15px;
-  box-sizing: border-box; }
-
-/* HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
- */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block; }
-
-/* Links
-   ========================================================================== */
-/**
- * Remove the gray background color from active links in IE 10.
- */
-a {
-  background: transparent;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  outline: none;
-  -webkit-tap-highlight-color: transparent; }
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-a:active,
-a:hover {
-  outline: 0; }
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
- */
-b,
-strong {
-  font-weight: bold; }
-
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari, and Chrome.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-h1, h2, h3, h4, h5, h6, p, span {
-  font-size: inherit;
-  margin: 0;
-  font-weight: inherit;
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-/*-------*/
-::selection {
-  background: #073057; }
-
-::-moz-selection {
-  background: #0D5191; }
-
-main {
-  margin: 30px 60px 50px;
-  max-width: 800px;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 15px 15px 15px 0; }
-
-main .sign {
+ }
+div{
+  
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  vertical-align: middle;
+}
+body{
+  background: #1D1E2A ;
+  width: 750px;
+  color: #880000;
+  font: 13px/1.231 arial,helvetica,clean,sans-serif;
   font-size: 13px;
-  letter-spacing: 1px;
-  white-space: nowrap;
-  overflow: hidden; }
-
-main section {
-  margin-top: 50px;
-  border-left: 10px solid lightblue;
-  padding-left: 40px;
-  overflow: hidden; }
-
-main section:first-child {
-  margin-top: 0; }
-
-main p, main ul, main h2, main h1 {
-  margin-top: 25px;
-  line-height: 1.4;
-  font-size: 15px;
-  color: #111;
-  overflow: hidden; }
-
-main ul li {
-  margin-top: 10px;
-  line-height: 1.4; }
-
-main p.big, main h2.big {
-  font-size: 40px;
-  color: #222;
-  word-wrap: break-word;
-  font-weight: 500; }
-
-main h1.name {
-  font-size: 24px;
-  color: #222;
-  margin-top: 0;
-  font-weight: 500;
-  letter-spacing: 1px; }
-
-main p:first-child {
-  margin-top: 0; }
-
-main a {
-  background: lightblue; }
-
-main a:hover {
-  background: #0D5191; }
-
-main b {
-  font-weight: 700; }
-
-main .star {
-  color: red; }
-
-.time {
-  top: 35px;
-  right: 80px;
+  padding: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  vertical-align: middle;
+}
+.box-outer {
+  zoom:100%;
   margin: 0;
-  border-bottom: 1px dashed;
-  font-size: 12.5px;
-  margin-top: 10px;
-  display: inline-block;
-  font-weight: 500; }
+  padding: 0;
+ }
+ .boxbar {
+  position: relative;
+  background: #1D1E2A ;
+  color: #A88085;
+  line-height:2em;
+  text-align: left;
+ }
+ .boxcontent {
+  
+  padding:.5em;
+  padding-top:.25em;
+  padding-bottom:0;
+  line-height:130%;
+  color: #A88085;
+  text-align: left;
+  background: #14151F;
 
-@media only screen and (max-width: 480px) {
-  main {
-    margin: 10px 20px 15px;
-    padding: 15px 0; }
-  main section {
-    padding-left: 20px;
-    border-left: 8px solid lightblue;
-    padding-left: 0;
-    border: 0;
-    margin-top: 40px; }
-  main h2.big {
-    font-size: 34px; }
-  main h1.name {
-    font-size: 24px; }
-  main ul li {
-    line-height: 1.45; } }
+}
+  .top-box {
+    background:#14151F;
+   }
+   #doc{
+    margin: auto;
+    text-align: left;
+    width: 57.69em;
+    *width: 56.301em;
+    min-width: 750px;
+   }
+  #announce{
+    background: #14151F;
+    color: #000;
+    line-height: 1.5em;
+  }
+  #wot-cnt {
+    min-height: 91px;
+}
+#stuff .column {
+  float: left;
+  width: 11.33em;
+  padding-bottom:5px;
+  background: inherit;
+}
+h3 {
+  color:#CCCCB4;
+}
+li {
+  list-style: none;
+}
+#stuff a{
+  color:#A88085;
+  text-decoration: none;
+}
+.footer {
+  background:inherit;
+}
+#stuff .boxcontent {
+  overflow: hidden;
+}
+h3{
+  font-size: 14px;
+}
+ a:hover:after {
+  
+  display: block;
+}
+a>div { display: none; }
+a:hover>div { display: block; }
